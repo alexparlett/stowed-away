@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="HS_StowAway" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" version="010" date="2018-03-12" lastupdate="1543856641" save="0" enabled="1">
+    <text language="7" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="33" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="34" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="39" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="44" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="49" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="55" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="81" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="82" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="86" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+    <text language="88" name="Stow Away" description="Provides a way to ask for NPC pilots to take you to the nearest station." author="Azalrion" />
+</content>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+    <add sel='//mdscript/cues/cue[@name="DefaultComm"]/actions/do_else[2]/add_player_choice_return' pos="before">
+        <do_if value="event.object.iscontrolentity and player.ship == event.object.ship">
+            <add_player_choice text="'Fly me to the nearest station'" comment="Fly me to my ship" section="g_askforlift" position="right" />
+        </do_if>
+    </add>
+    <add sel='//do_elseif[@value="event.param == &apos;g_worksomewhere&apos; or event.param == &apos;g_hireworksomewhere&apos;"]' pos="after">
+        <do_elseif value="event.param == 'g_askforlift'">
+            <find_station name="$station" functional="true" space="event.object.zone" multiple="false" >
+                <match_relation_to object="event.object" relation="neutral" comparison="ge" />
+            </find_station>
+            <do_if value="$station">
+                <create_order object="event.object.ship" id="'DockAndWait'" immediate="true">
+                    <param name="destination" value="$station"/>
+                    <param name="dockfollowers" value="true"/>
+                    <param name="callerid" value="event.object.ship.order"/>
+                    <param name="debugchance" value="$DebugChance"/>
+                    <param name="timeout" value="1min"/>
+                </create_order>
+            </do_if>
+        </do_elseif>
+    </add>
+</diff>
